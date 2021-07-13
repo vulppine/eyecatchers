@@ -1,0 +1,174 @@
+@font-face {font-family: Charcoal; src: url(eyecatcher-4/Charcoal-test.ttf); }
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(eyecatcher-4/background.png);
+}
+img { display: block; }
+
+#platinumWindow {
+    width: 250px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-areas:
+        "titlebar"
+        "content";
+    border: 1px solid black;
+    box-shadow: 1px 1px;
+}
+
+#platinumBorder1 {
+    border-left: 1px solid white;
+    border-top: none;
+    border-bottom: 1px solid #9c9c9c;
+    border-right: 1px solid #9c9c9c;
+}
+
+#platinumBorder2 {
+    border: 2px solid #cecece;
+    border-top: 1px solid #cecece;
+}
+
+#platinumBorder3 {
+    border-top: 1px solid #9c9c9c;
+    border-left: 1px solid #9c9c9c;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#platinumBorder4 {
+    border: 1px solid black;
+}
+
+#content {
+    background-color: white;
+    padding: 10px;
+    height: 250px;
+}
+
+#content > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#platinumTitleBar {
+    display: grid;
+    grid-template-columns: 12px 1fr auto 1fr 29px;
+    grid-template-areas:
+        "leftButtons"
+        "leftMargin"
+        "name"
+        "rightMargin"
+        "rightButtons"
+}
+
+#platinumTitleBorder1 {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #9c9c9c;
+    border-bottom: none;
+}
+
+#platinumTitleBorder2 {
+    border: 1px solid #cecece;
+}
+
+.platinumTitleMargins {
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #cecece;
+}
+
+#platinumTitleBarName {
+    background-color: #cecece;
+    font-family: Charcoal;
+    font-size: 10px;
+}
+
+#platinumMenuBar {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+#platinumMenuBorder1 {
+    border-bottom: 1px solid black;
+}
+
+#platinumMenuBorder2 {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #9c9c9c;
+    border-bottom: 1px solid #9c9c9c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #dedede;
+}
+
+#platinumMenuBarContents {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #dedede;
+
+    height: 17px;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto 6px auto;
+    font-family: Charcoal;
+    font-size: 12px;
+}
+
+#appleIcon {
+    padding: 1px 10px 1px 14px;
+}
+
+#menuBarItems > span {
+    display: inline-block;
+    margin: 0;
+    margin-top: -4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+    padding-left: 7px;
+}
+
+#menuBarItems > a {
+    display: inline-block;
+    margin: 0;
+    margin-top: -4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+    padding-left: 7px;
+}
+
+#menuBarItems > a:active {
+    background-color: #31319f;
+    color: white;
+}
+
+#menuBarSeparator {
+    padding: 0 6px 0 6px;
+}
+
+#menuBarActiveProgram {
+    padding: 0 6px 0 11px;
+}
+
+#menuBarActiveProgram > img {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#menuBarActiveProgram > span {
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+}

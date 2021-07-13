@@ -1,0 +1,23 @@
+html { height: 100%; }
+body { background: linear-gradient(0deg, rgba(212,116,0,1) 50%, rgba(255,156,0,1) 100%); height: 100%; padding: 0; margin: 0 }
+
+@keyframes gradiant-animation {
+    0% {top: 50%;}
+    25% {top: 75%;}
+    50% {top: 25%;}
+    75% {top: 75%;}
+    100% {top: 50%;}
+}
+
+#animated-gradient {
+    position: fixed;
+    top: 50%;
+    height: 200%;
+    width: 200%;
+    margin-left: -50%;
+    filter: blur(50px);
+    background-color: rgba(124,67,0,1);
+    animation-name: gradiant-animation;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+}

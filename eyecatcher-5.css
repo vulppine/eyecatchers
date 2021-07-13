@@ -1,0 +1,73 @@
+@font-face { font-family: Futura; src: url('eyecatcher-5/Futura Heavy Italic font.ttf');  }
+@font-face { font-family: Courier New; src: url(eyecatcher-5/cour.ttf); }
+
+body { background-color: white; font-family: Courier New; font-size: 13px; }
+
+#mainContainer {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content";
+    grid-template-rows: 25% 75%;
+
+    /* fixed height/width for eyecatcher container, plus supreme's own site has a fixed height/width already */
+
+    height: 450px;
+    width: 450px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+    background-color: red;
+    color: white;
+    padding: 0 0.25em 0.65em 0.9em;
+    width: 13.25em;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo > p {
+    margin: 0;
+    font-family: Futura;
+    letter-spacing: -0.06em;
+    line-height: 1em;
+    font-size: 40px;
+}
+
+#time {
+    text-align: center;
+}
+
+#content {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "info";
+    grid-template-columns: 50% 50%;
+}
+
+#info { padding: 1em; }
+#image > img { margin-top: 25%; width: 100%; }
+#h1 { font-size: 1.5em; font-weight: unset; margin-bottom: 0; }
+#h2 { font-size: 1em; font-weight: bold; margin-top: 0; }
+#price { font-size: 1.5em; margin-top: 0.5em; }
+#mini { display: block; padding: 2px; border: 1px solid gray; width: 10%; }
+
+.shopbuttons {
+    font-size: 0.75em;
+    padding: 0.5em 1em 0.5em 1em;
+    color: white;
+    font-weight: bold;
+}
+
+#addcart {
+    background-color: red;
+}
+
+#keepshopping { background-color: #40393a; }

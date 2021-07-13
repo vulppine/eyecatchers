@@ -1,0 +1,21 @@
+@font-face { font-family: Futura; src: url('eyecatcher-8/futuraxblk.ttf'); }
+
+#Flipp {
+    position: fixed;
+    bottom: 0; /* haha, yeah right */
+    right: 10%;
+    height: 75%;
+}
+
+#caption {
+    font-family: Futura;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    width: 100%;
+}

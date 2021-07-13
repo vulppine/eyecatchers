@@ -1,0 +1,56 @@
+html { height: 100%; }
+body { height: 100%; margin: 0; padding: 0; }
+@font-face { font-family: W95FA; src: url(eyecatcher-2/W95FA.otf); }
+
+#mainContainer {
+    height: 100%;
+    background-color: #00807F;
+    font-family: W95FA;
+}
+
+#win95icon {
+    position: fixed;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#win95icon > span {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 5px 2px 5px;
+    background-color: #00807F;
+}
+
+#win95icon > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#taskbar {
+    display: grid;
+    position: fixed;
+    grid-template-columns: 58px 1fr 67px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 99;
+}
+
+#winbar {
+    width: 100%;
+    background-color: #c3c3c3;
+    border-top: 1px solid #c3c3c3;
+}
+
+#tray {
+    background-image: url("eyecatcher-2/win-tray.png");
+}
+
+#tray-time {
+    position: relative;
+    top: 5px;
+    left: 15px;
+    font-size: 13px;
+}
